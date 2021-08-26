@@ -2,11 +2,20 @@ import React from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
+import About from "./pages/About";
+import { Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
       <Nav />
-      <Homepage />
+      <Switch>
+        <Route path="/" exact>
+          <Homepage />
+        </Route>
+        <Route>
+          <About path="/About" exact />
+        </Route>
+      </Switch>
       <Footer />
     </div>
   );
