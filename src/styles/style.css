@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -11,4 +15,44 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+nav {
+  background-color: #87528b;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
+nav ul li {
+  padding: 0.5rem 1rem;
+}
+nav ul li a {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.search input, .search button {
+  font-size: 1.5rem;
+  padding: 0.25rem;
+  border: 3px solid #2b002b;
+}
+.search button {
+  background-color: #490149;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #cecece;
 }/*# sourceMappingURL=style.css.map */

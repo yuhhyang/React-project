@@ -2,7 +2,8 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div>
+        //使 footer 置底
+        <div style={{minHeight:"100vh"}}>
             <h1>About</h1>
         </div>
     )
