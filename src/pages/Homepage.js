@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Search from "../components/Search";
 import Pictures from "../components/Pictures";
 const Homepage = () => {
@@ -22,6 +22,10 @@ const Homepage = () => {
     console.log(parseData);
     setPhotos(parseData.photos);
   };
+  // 使頁面開啟時就自動載入相片
+  useEffect(() => {
+    search();
+  }, []);
   // 搜尋照片 api，input是一個state
   const searchUrl = `https://api.pexels.com/v1/search?query=${input}&per_page=15&page=1`;
   return (
