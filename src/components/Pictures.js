@@ -8,7 +8,7 @@ const Pictures = ({ photos }) => {
         <img src={photos.src.large} alt="" />
       </div>
       <p>
-        Download Image:{" "}
+        Download Image:
         <a target="_blank" href={photos.src.large}>
           Click Here
         </a>

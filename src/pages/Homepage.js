@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Search from "../components/Search";
-import Picture from "../components/Pictures";
+import Pictures from "../components/Pictures";
 const Homepage = () => {
   // set State
   const [input, setInput] = useState("");
@@ -29,10 +29,9 @@ const Homepage = () => {
     <div style={{ minHeight: "100vh" }}>
       <Search search={search} />
       <div className="pictures">
-        {photos &&
-          photos.map(img => {
-            return <Picture photos={photos} />;
-          })}
+        {photos?.map(img => {
+          return <Pictures photos={img} />;
+        })}
       </div>
     </div>
   );
